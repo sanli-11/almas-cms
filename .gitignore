@@ -4,3 +4,6 @@
 # React Router
 /.react-router/
 /build/
+
+# PNPM dependecnies
+/pnpm-workspace.yaml
