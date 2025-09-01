@@ -41,7 +41,8 @@
 }
 
 @theme {
-  --font-sans: "Hikasami", "Inter", ui-sans-serif, system-ui, sans-serif,
+  --font-sans:
+    "Hikasami", "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -52,8 +53,31 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
 
-  h1 {
-    font-family: "Reganz", sans-serif;
-  }
+h1 {
+  font-family: "Reganz", sans-serif;
+}
+
+input {
+  border-bottom: 1px solid gray;
+  padding: 0.33rem 0.5rem;
+  background-color: transparent;
+}
+
+label {
+  font-weight: 500;
+}
+
+button {
+  background-color: oklch(97% 0.001 106.424);
+  color: #0e0e0e;
+  font-weight: 600;
+  padding: 0.5rem 3rem;
+  border-radius: 0.375rem;
+}
+
+.banner {
+  background-color: oklch(26.8% 0.007 34.298);
+  color: #f9fafb;
 }
