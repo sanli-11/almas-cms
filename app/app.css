@@ -1,9 +1,48 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Hikasami";
+  src: url("assets/fonts/Hikasami-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hikasami";
+  src: url("assets/fonts/Hikasami-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hikasami";
+  src: url("assets/fonts/Hikasami-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hikasami";
+  src: url("assets/fonts/Hikasami.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Reganz";
+  src: url("assets/fonts/Reganz-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-sans:
-    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Hikasami", "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,
@@ -12,5 +51,9 @@ body {
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+
+  h1 {
+    font-family: "Reganz", sans-serif;
   }
 }
