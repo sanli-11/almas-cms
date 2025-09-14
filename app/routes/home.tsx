@@ -1,4 +1,4 @@
-import { SignIn } from "../signin/signin";
+import { Dashboard } from "~/dashboard/dashboard";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -9,5 +9,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <SignIn />;
+  return <Dashboard />;
 }
